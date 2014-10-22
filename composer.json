@@ -1,0 +1,15 @@
+{
+    "name": "baptistegillard/twig",
+    "description": "Twig Engine Template",
+    "require": {
+        "twig/twig": "~1.16"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BaptisteGillard",
+            "email": "baptiste.gillard@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
