@@ -1,0 +1,26 @@
+{% extends 'Blog/base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - My Articles
+{% endblock %}
+
+{% block leftContent %}
+    {% for article in articles %}
+        {% if article.enabled %}
+            <article>
+                <header>
+                    <h1>{{ article.name }}</h1>
+                </header>
+                <p>{{ article.content }}</p>
+                <footer>
+                    <time datetime="{{ article.date|date('c') }}">{{ article.date|date('d-m-Y') }}</time>
+                </footer>
+            </article>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block rightContent %}
+    <p>zefzejkfnkezf kzefb zekj fbzejkfb zkejfb</p>
+    <p>zefzejkfnkezf kzefb zekj fbzejkfb zkejfb</p>
+{% endblock %}

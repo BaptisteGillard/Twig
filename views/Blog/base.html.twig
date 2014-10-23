@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="col-md-8">
+        {% block leftContent %}{% endblock %}
+    </div>
+    <div class="col-md-4">
+        {% block rightContent %}{% endblock %}
+    </div>
+{% endblock %}
