@@ -19,14 +19,14 @@ $twig = new Twig_Environment($loader, [
 //On Met en place la base
 $dsn        = 'mysql:host=localhost;dbname=blog';
 $user       = 'root';
-$password   = 'roo';
+$password   = 'root';
 
 //On se test la connexion a la base , si il y a un probleme , on lance une exception
 try {
     $pdo = new PDO($dsn,$user,$password);
 }catch (PDOException $e){
     mail('baptiste.gillard+error@gmail.com','Erreur sur de connexion a la pdo sur mon site',$e->getMessage());
-    echo 'Erreur de connec maggle';
+    echo 'Erreur de connection ';
     die;
     //var_dump($e);
 };
